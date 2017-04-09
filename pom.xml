@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.ligoj.api</groupId>
+		<artifactId>plugin-parent</artifactId>
+		<version>1.0.1</version>
+		<relativePath />
+	</parent>
+
+	<groupId>org.ligoj.plugin</groupId>
+	<artifactId>plugin-id-ldap-embedded</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>Ligoj - Plugin ID - LDAP Embedded</name>
+	<description>Embedded LDAP server for test, not really ready for production</description>
+
+	<dependencies>
+		<!-- LDAP -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-ldap</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-protocol-ldap</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ldap</groupId>
+			<artifactId>spring-ldap-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.data</groupId>
+					<artifactId>spring-data-commons</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ldap</groupId>
+			<artifactId>spring-ldap-core-tiger</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.ligoj.plugin</groupId>
+			<artifactId>plugin-id-ldap</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ligoj.plugin</groupId>
+			<artifactId>plugin-id</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+									</excludes>
+								</filter>
+							</filters>
+							<artifactSet>
+								<includes>
+									<include>org.apache.directory.server:*</include>
+									<include>org.apache.directory.shared:*</include>
+									<include>org.apache.mina:*</include>
+									<include>org.springframework.security:spring-security-ldap</include>
+									<include>bouncycastle:bcprov-jdk15</include>
+								</includes>
+							</artifactSet>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

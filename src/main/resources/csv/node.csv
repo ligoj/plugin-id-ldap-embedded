@@ -1,0 +1,2 @@
+id;name;refined.id;mode;uiClasses;tag;tagUiClasses
+service:id:ldap:embedded;Embedded ApacheDS;service:id:ldap;CREATE;;;

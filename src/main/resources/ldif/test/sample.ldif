@@ -1,0 +1,50 @@
+dn: dc=sample,dc=com
+dc: sample
+objectClass: dcObject
+objectClass: organization
+
+dn: ou=groups,dc=sample,dc=com
+ou: groups
+objectClass: organizationalUnit
+
+dn: ou=project,dc=sample,dc=com
+ou : project
+objectclass: organizationalUnit
+
+dn: ou=quarantine,dc=sample,dc=com
+ou:quarantine
+objectclass: organizationalUnit
+
+dn: ou=people,dc=sample,dc=com
+ou:people
+objectclass: organizationalUnit
+
+dn: ou=external,ou=people,dc=sample,dc=com
+ou:external
+objectclass: organizationalUnit
+
+dn: ou=internal,ou=people,dc=sample,dc=com
+ou:internal
+objectclass: organizationalUnit
+
+dn: ou=department1,ou=people,dc=sample,dc=com
+ou:department1
+objectclass: organizationalUnit
+
+dn: uid=ligoj-admin,ou=department1,ou=internal,ou=people,dc=sample,dc=com
+cn: Admin Ligoj
+sn: ligoj-admin
+givenName: Admin
+uid: ligoj-admin
+mail: ligoj-admin@sample.com
+objectClass: inetOrgPerson
+userPassword: ligoj-admin
+
+dn: uid=ligoj-user,ou=department1,ou=internal,ou=people,dc=sample,dc=com
+cn: user Ligoj
+sn: ligoj-user
+givenName: user
+uid: ligoj-user
+mail: ligoj-user@sample.com
+objectClass: inetOrgPerson
+userPassword: ligoj-user
