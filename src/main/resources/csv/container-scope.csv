@@ -1,0 +1,7 @@
+name;dn;locked;type
+Project;ou=project,dc=sample,dc=com;true;GROUP
+External company;ou=external,ou=people,dc=sample,dc=com;false;COMPANY
+Internal company;ou=internal,ou=people,dc=sample,dc=com;false;COMPANY
+Quarantine;ou=quarantine,dc=sample,dc=com;false;COMPANY
+People;ou=people,dc=sample,dc=com;true;COMPANY
+Group;ou=groups,dc=sample,dc=com;true;GROUP

@@ -6,6 +6,7 @@ import java.util.List;
 import org.ligoj.app.api.FeaturePlugin;
 import org.ligoj.app.model.Node;
 import org.ligoj.app.model.ParameterValue;
+import org.ligoj.app.plugin.id.model.ContainerScope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -22,7 +23,7 @@ public class LdapEmbeddedResource implements FeaturePlugin {
 	@Override
 	public List<Class<?>> getInstalledEntities() {
 		// Add node configuration during the install
-		return Arrays.asList(Node.class, ParameterValue.class);
+		return Arrays.asList(Node.class, ParameterValue.class, ContainerScope.class);
 	}
 
 }
