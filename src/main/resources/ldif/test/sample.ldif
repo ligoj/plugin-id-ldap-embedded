@@ -31,6 +31,13 @@ dn: ou=department1,ou=internal,ou=people,dc=sample,dc=com
 ou:department1
 objectclass: organizationalUnit
 
+dn: cn=Sample Group,ou=groups,dc=sample,dc=com
+cn:Sample Group
+objectclass: groupOfUniqueNames
+uniqueMember: uid=none
+uniqueMember: uid=ligoj-user,ou=department1,ou=internal,ou=people,dc=sample,dc=com
+uniqueMember: uid=ligoj-admin,ou=department1,ou=internal,ou=people,dc=sample,dc=com
+
 dn: uid=ligoj-admin,ou=department1,ou=internal,ou=people,dc=sample,dc=com
 cn: Admin Ligoj
 sn: Ligoj

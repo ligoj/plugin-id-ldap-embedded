@@ -7,9 +7,5 @@
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 			http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 	
-<<<<<<< HEAD
 	<security:ldap-server ldif="classpath:sample.ldif" root="dc=sample,dc=com" port="34389"/>
-=======
-	<security:ldap-server ldif="classpath:ldif/test/sample.ldif" root="dc=sample,dc=com" port="34389"/>
->>>>>>> branch 'master' of https://github.com/ligoj/plugin-id-ldap-embedded
 </beans>
