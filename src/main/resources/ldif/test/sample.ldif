@@ -27,13 +27,13 @@ dn: ou=internal,ou=people,dc=sample,dc=com
 ou:internal
 objectclass: organizationalUnit
 
-dn: ou=department1,ou=people,dc=sample,dc=com
+dn: ou=department1,ou=internal,ou=people,dc=sample,dc=com
 ou:department1
 objectclass: organizationalUnit
 
 dn: uid=ligoj-admin,ou=department1,ou=internal,ou=people,dc=sample,dc=com
 cn: Admin Ligoj
-sn: ligoj-admin
+sn: Ligoj
 givenName: Admin
 uid: ligoj-admin
 mail: ligoj-admin@sample.com
@@ -42,7 +42,7 @@ userPassword: ligoj-admin
 
 dn: uid=ligoj-user,ou=department1,ou=internal,ou=people,dc=sample,dc=com
 cn: user Ligoj
-sn: ligoj-user
+sn: Ligoj
 givenName: user
 uid: ligoj-user
 mail: ligoj-user@sample.com
