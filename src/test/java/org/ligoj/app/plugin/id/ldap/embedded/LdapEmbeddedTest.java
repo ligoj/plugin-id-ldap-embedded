@@ -27,7 +27,7 @@ public class LdapEmbeddedTest extends AbstractAppTest {
 
 	@Test
 	public void getKey() {
-		Assert.assertEquals("feature:id:ldap:embedded", resource.getKey());
+		Assert.assertEquals("service:id:ldap:embedded", resource.getKey());
 	}
 
 	@Test

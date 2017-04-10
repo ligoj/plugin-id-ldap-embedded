@@ -10,7 +10,7 @@
 
 	<groupId>org.ligoj.plugin</groupId>
 	<artifactId>plugin-id-ldap-embedded</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<name>Ligoj - Plugin ID - LDAP Embedded</name>
 	<description>Embedded LDAP server for test, not really ready for production</description>
