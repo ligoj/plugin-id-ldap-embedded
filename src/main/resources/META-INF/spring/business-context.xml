@@ -7,5 +7,5 @@
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 			http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 	
-	<security:ldap-server ldif="classpath:sample.ldif" root="dc=sample,dc=com" port="34389"/>
+	<security:ldap-server ldif="classpath:export/base.ldif" root="dc=sample,dc=com" port="34389"/>
 </beans>
