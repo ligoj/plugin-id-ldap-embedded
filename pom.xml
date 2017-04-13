@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<relativePath />
 	</parent>
 
@@ -50,11 +50,13 @@
 			<groupId>org.ligoj.plugin</groupId>
 			<artifactId>plugin-id-ldap</artifactId>
 			<version>(0.0.0,1.0.0)</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.ligoj.plugin</groupId>
 			<artifactId>plugin-id</artifactId>
 			<version>(0.0.0,1.0.0)</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
