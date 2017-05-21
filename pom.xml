@@ -4,9 +4,14 @@
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
-		<version>1.0.4</version>
+		<version>1.0.7</version>
 		<relativePath />
 	</parent>
+	
+	<properties>
+		<shared-ldap.version>0.9.15</shared-ldap.version>
+		<spring-ldap.version>2.3.1.RELEASE</spring-ldap.version>
+	</properties>
 
 	<groupId>org.ligoj.plugin</groupId>
 	<artifactId>plugin-id-ldap-embedded</artifactId>
@@ -14,6 +19,43 @@
 	<packaging>jar</packaging>
 	<name>Ligoj - Plugin ID - LDAP Embedded</name>
 	<description>Embedded LDAP server for test, not really ready for production</description>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- LDAP -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-ldap</artifactId>
+				<version>${spring-security.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.directory.shared</groupId>
+				<artifactId>shared-ldap</artifactId>
+				<version>${shared-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.directory.server</groupId>
+				<artifactId>apacheds-protocol-ldap</artifactId>
+				<version>${apacheds.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core-tiger</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<!-- LDAP -->
