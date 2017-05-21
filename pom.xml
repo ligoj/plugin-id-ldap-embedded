@@ -20,6 +20,12 @@
 	<name>Ligoj - Plugin ID - LDAP Embedded</name>
 	<description>Embedded LDAP server for test, not really ready for production</description>
 
+	<scm>
+		<connection>scm:git:https://github.com/ligoj/plugin-id-ldap-embedded</connection>
+		<developerConnection>scm:git:https://github.com/ligoj/plugin-id-ldap-embedded</developerConnection>
+		<url>https://github.com/ligoj/plugin-id-ldap-embedded.git</url>
+	</scm>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- LDAP -->
