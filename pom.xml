@@ -7,7 +7,7 @@
 		<version>1.1.4</version>
 		<relativePath />
 	</parent>
-	
+
 	<properties>
 		<shared-ldap.version>0.9.15</shared-ldap.version>
 		<spring-ldap.version>2.3.1.RELEASE</spring-ldap.version>
@@ -25,6 +25,11 @@
 		<developerConnection>scm:git:https://github.com/ligoj/plugin-id-ldap-embedded</developerConnection>
 		<url>https://github.com/ligoj/plugin-id-ldap-embedded.git</url>
 	</scm>
+
+	<properties>
+		<!-- Remove with bootstrap 1.7.5+ -->
+		<commons-collection.version>3.2.2</commons-collection.version>
+	</properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -49,6 +54,11 @@
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>${commons-collection.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.ldap</groupId>
