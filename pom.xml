@@ -4,15 +4,13 @@
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
-		<version>1.1.4</version>
+		<version>1.1.6</version>
 		<relativePath />
 	</parent>
 
 	<properties>
 		<shared-ldap.version>0.9.15</shared-ldap.version>
 		<spring-ldap.version>2.3.1.RELEASE</spring-ldap.version>
-		<!-- Remove with bootstrap 1.7.5+ -->
-		<commons-collection.version>3.2.2</commons-collection.version>
 	</properties>
 
 	<groupId>org.ligoj.plugin</groupId>
