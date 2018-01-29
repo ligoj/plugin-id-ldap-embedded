@@ -84,6 +84,12 @@
 			<groupId>org.apache.directory.server</groupId>
 			<artifactId>apacheds-protocol-ldap</artifactId>
 			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.directory.server</groupId>
+					<artifactId>apacheds-kerberos-shared</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ldap</groupId>
