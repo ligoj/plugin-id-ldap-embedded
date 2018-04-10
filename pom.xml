@@ -11,6 +11,7 @@
 	<properties>
 		<shared-ldap.version>0.9.15</shared-ldap.version>
 		<spring-ldap.version>2.3.2.RELEASE</spring-ldap.version>
+		<sonar.sources>src/main/java</sonar.sources>
 	</properties>
 
 	<groupId>org.ligoj.plugin</groupId>
