@@ -10,7 +10,7 @@ Embedded LDAP plugin ready to use with default configuration
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6b381ff12b145198058c78cf4b503fd)](https://www.codacy.com/app/ligoj/plugin-id-ldap-embedded?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ligoj/plugin-id-ldap-embedded&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/ligoj/plugin-id-ldap-embedded/badge)](https://www.codefactor.io/repository/github/ligoj/plugin-id-ldap-embedded)
 [![Known Vulnerabilities](https://snyk.io/test/github/ligoj/plugin-id-ldap-embedded/badge.svg)](https://snyk.io/test/github/ligoj/plugin-id-ldap-embedded)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://gus.mit-license.org/)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://fabdouglas.mit-license.org/)
 
 [Ligoj](https://github.com/ligoj/ligoj) Embedded LDAP plugin, and extending [ID plugin](https://github.com/ligoj/plugin-id-ldap)
 
