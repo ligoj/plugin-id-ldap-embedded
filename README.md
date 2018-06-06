@@ -6,7 +6,7 @@ Embedded LDAP plugin ready to use with default configuration
 [![Build Status](https://semaphoreci.com/api/v1/ligoj/plugin-id-ldap-embedded/branches/master/shields_badge.svg)](https://semaphoreci.com/ligoj/plugin-id-ldap-embedded)
 [![Build Status](https://ci.appveyor.com/api/projects/status/od4nfwlbgqjn5i1j/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-id-ldap-embedded/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/ligoj/plugin-id-ldap-embedded/badge.svg?branch=master)](https://coveralls.io/github/ligoj/plugin-id-ldap-embedded?branch=master)
-[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=org.ligoj.plugin:plugin-id-ldap-embedded)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-id-ldap-embedded)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-id-ldap-embedded)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-id-ldap-embedded)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6b381ff12b145198058c78cf4b503fd)](https://www.codacy.com/app/ligoj/plugin-id-ldap-embedded?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ligoj/plugin-id-ldap-embedded&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/ligoj/plugin-id-ldap-embedded/badge)](https://www.codefactor.io/repository/github/ligoj/plugin-id-ldap-embedded)
 [![Known Vulnerabilities](https://snyk.io/test/github/ligoj/plugin-id-ldap-embedded/badge.svg)](https://snyk.io/test/github/ligoj/plugin-id-ldap-embedded)
