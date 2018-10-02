@@ -3,10 +3,10 @@ package org.ligoj.app.plugin.id.ldap.embedded;
 import java.util.Arrays;
 import java.util.List;
 
-import org.ligoj.app.api.FeaturePlugin;
 import org.ligoj.app.model.Node;
 import org.ligoj.app.model.ParameterValue;
 import org.ligoj.app.plugin.id.model.ContainerScope;
+import org.ligoj.bootstrap.core.plugin.FeaturePlugin;
 import org.springframework.stereotype.Component;
 
 /**
