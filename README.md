@@ -3,7 +3,6 @@ Embedded LDAP plugin ready to use with default configuration
 
 [![Build Status](https://travis-ci.org/ligoj/plugin-id-ldap-embedded.svg?branch=master)](https://travis-ci.org/ligoj/plugin-id-ldap-embedded)
 [![Build Status](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded)
-[![Build Status](https://semaphoreci.com/api/v1/ligoj/plugin-id-ldap-embedded/branches/master/shields_badge.svg)](https://semaphoreci.com/ligoj/plugin-id-ldap-embedded)
 [![Build Status](https://ci.appveyor.com/api/projects/status/od4nfwlbgqjn5i1j/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-id-ldap-embedded/branch/master)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-id-ldap-embedded&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-id-ldap-embedded)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-id-ldap-embedded)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-id-ldap-embedded)
