@@ -1,7 +1,7 @@
 # :link: Ligoj embedded LDAP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded) [![Download](https://api.bintray.com/packages/ligoj/maven-repo/plugin-id-ldap-embedded/images/download.svg) ](https://bintray.com/ligoj/maven-repo/plugin-id-ldap-embedded/_latestVersion)
 Embedded LDAP plugin ready to use with default configuration
 
-[![Build Status](https://travis-ci.org/ligoj/plugin-id-ldap-embedded.svg?branch=master)](https://travis-ci.org/ligoj/plugin-id-ldap-embedded)
+[![Build Status](https://travis-ci.com/ligoj/plugin-id-ldap-embedded.svg?branch=master)](https://travis-ci.com/ligoj/plugin-id-ldap-embedded)
 [![Build Status](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded)
 [![Build Status](https://ci.appveyor.com/api/projects/status/od4nfwlbgqjn5i1j/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-id-ldap-embedded/branch/master)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-id-ldap-embedded&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-id-ldap-embedded)
