@@ -6,12 +6,12 @@
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
 		<version>3.2.15</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 
 	<properties>
 		<shared-ldap.version>0.9.15</shared-ldap.version>
-		<spring-ldap.version>2.3.2.RELEASE</spring-ldap.version>
+		<spring-ldap.version>2.4.1</spring-ldap.version>
 		<sonar.sources>src/main/java</sonar.sources>
 	</properties>
 
