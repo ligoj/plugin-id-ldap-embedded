@@ -10,7 +10,7 @@
 	</parent>
 
 	<properties>
-		<shared-ldap.version>0.9.15</shared-ldap.version>
+		<shared-ldap.version>0.9.19</shared-ldap.version>
 		<spring-ldap.version>2.4.1</spring-ldap.version>
 		<sonar.sources>src/main/java</sonar.sources>
 	</properties>
@@ -40,7 +40,7 @@
 				<groupId>org.apache.directory.server</groupId>
 				<artifactId>apacheds-core-avl</artifactId>
 				<!-- Needed for JSE12+ compatibility -->
-				<version>1.5.7</version>
+				<version>${apacheds.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.security</groupId>
