@@ -17,7 +17,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
  * Test class of {@link LdapEmbeddedResource}
  */
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = "classpath:/META-INF/spring/application-context-test.xml")
+@ContextConfiguration(locations = {"classpath:/META-INF/spring/application-context-test.xml","classpath:/META-INF/spring/business-context.xml"})
 @Rollback
 @Transactional
 class LdapEmbeddedTest extends AbstractAppTest {
