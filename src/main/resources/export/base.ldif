@@ -1,5 +1,6 @@
 dn: dc=sample,dc=com
 dc: sample
+o: sample
 objectClass: dcObject
 objectClass: organization
 
