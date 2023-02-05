@@ -1,9 +1,6 @@
 # :link: Ligoj embedded LDAP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded) [![Download](https://api.bintray.com/packages/ligoj/maven-repo/plugin-id-ldap-embedded/images/download.svg) ](https://bintray.com/ligoj/maven-repo/plugin-id-ldap-embedded/_latestVersion)
 Embedded LDAP plugin ready to use with default configuration
 
-[![Build Status](https://app.travis-ci.com/github/ligoj/plugin-id-ldap-embedded.svg?branch=master)](https://app.travis-ci.com/github/ligoj/plugin-id-ldap-embedded)
-[![Build Status](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-id-ldap-embedded)
-[![Build Status](https://ci.appveyor.com/api/projects/status/od4nfwlbgqjn5i1j/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-id-ldap-embedded/branch/master)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-id-ldap-embedded&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-id-ldap-embedded)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-id-ldap-embedded)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-id-ldap-embedded)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6b381ff12b145198058c78cf4b503fd)](https://www.codacy.com/gh/ligoj/plugin-id-ldap-embedded?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ligoj/plugin-id-ldap-embedded&amp;utm_campaign=Badge_Grade)
