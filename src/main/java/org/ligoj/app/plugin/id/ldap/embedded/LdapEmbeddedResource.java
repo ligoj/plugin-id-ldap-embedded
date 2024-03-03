@@ -22,7 +22,7 @@ public class LdapEmbeddedResource implements FeaturePlugin {
 
 	@Override
 	public List<Class<?>> getInstalledEntities() {
-		// Add node configuration during the install
+		// Add node configuration during the installation
 		return Arrays.asList(Node.class, ParameterValue.class, ContainerScope.class);
 	}
 
