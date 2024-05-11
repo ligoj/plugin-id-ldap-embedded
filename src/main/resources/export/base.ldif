@@ -10,31 +10,31 @@ objectClass: organizationalUnit
 
 dn: ou=project,ou=groups,dc=sample,dc=com
 ou : project
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: ou=quarantine,dc=sample,dc=com
 ou:quarantine
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: ou=people,dc=sample,dc=com
 ou:people
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: ou=external,ou=people,dc=sample,dc=com
 ou:external
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: ou=internal,ou=people,dc=sample,dc=com
 ou:internal
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: ou=department1,ou=internal,ou=people,dc=sample,dc=com
 ou:department1
-objectclass: organizationalUnit
+objectClass: organizationalUnit
 
 dn: cn=Sample Group,ou=groups,dc=sample,dc=com
 cn:Sample Group
-objectclass: groupOfUniqueNames
+objectClass: groupOfUniqueNames
 uniqueMember: uid=none
 uniqueMember: uid=ligoj-user,ou=department1,ou=internal,ou=people,dc=sample,dc=com
 uniqueMember: uid=ligoj-admin,ou=department1,ou=internal,ou=people,dc=sample,dc=com
