@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.ligoj.api</groupId>
         <artifactId>plugin-parent</artifactId>
-        <version>4.1.11</version>
+        <version>4.1.13</version>
         <relativePath/>
     </parent>
 
@@ -17,10 +17,13 @@
     <url>https://github.com/ligoj/plugin-id-ldap-embedded</url>
 
     <properties>
-        <shared-ldap.version>0.9.15</shared-ldap.version>
-        <spring-ldap.version>3.2.1</spring-ldap.version>
         <sonar.sources>src/main/java</sonar.sources>
-        <spring-ldap-tiger.version>2.4.1</spring-ldap-tiger.version>
+        <shared-ldap.version>0.9.15</shared-ldap.version>
+        <spring-ldap.version>3.3.3</spring-ldap.version>
+        <spring-ldap-tiger.version>2.4.4</spring-ldap-tiger.version>
+        <apacheds-core-avl.version>1.5.7</apacheds-core-avl.version>
+        <mina.version>2.0.27</mina.version>
+        <bcprov.version>1.81</bcprov.version>
     </properties>
 
     <scm>
@@ -31,17 +34,22 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
             <!-- LDAP -->
             <dependency>
                 <groupId>org.apache.mina</groupId>
                 <artifactId>mina-core</artifactId>
-                <version>2.0.25</version>
+                <version>${mina.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.directory.server</groupId>
                 <artifactId>apacheds-core-avl</artifactId>
                 <!-- Needed for JSE12+ compatibility -->
-                <version>1.5.7</version>
+                <version>${apacheds-core-avl.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>bouncycastle</groupId>
@@ -52,7 +60,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk15to18</artifactId>
-                <version>1.78.1</version>
+                <version>${bcprov.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.directory.server</groupId>
