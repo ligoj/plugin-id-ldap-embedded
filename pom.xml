@@ -19,7 +19,7 @@
     <properties>
         <sonar.sources>src/main/java</sonar.sources>
         <shared-ldap.version>0.9.15</shared-ldap.version>
-        <spring-ldap.version>3.3.3</spring-ldap.version>
+        <spring-ldap.version>3.3.4</spring-ldap.version>
         <spring-ldap-tiger.version>2.4.4</spring-ldap-tiger.version>
         <apacheds-core-avl.version>1.5.7</apacheds-core-avl.version>
         <mina.version>2.0.27</mina.version>
