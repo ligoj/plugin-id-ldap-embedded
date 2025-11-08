@@ -1,4 +1,4 @@
-# :link: Ligoj embedded LDAP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-id-ldap-embedded)
+# :link: Ligoj embedded LDAP plugin ![Maven Central](https://img.shields.io/maven-central/v/org.ligoj.plugin/plugin-id-ldap-embedded)
 Embedded LDAP plugin ready to use with default configuration
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-id-ldap-embedded&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-id-ldap-embedded)
