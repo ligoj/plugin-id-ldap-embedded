@@ -9,3 +9,4 @@
 **/node_modules
 **/*.iml
 /package-lock.json
+/src/main/resources/export/schema/custom.ldif
