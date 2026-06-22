@@ -23,7 +23,7 @@
         <spring-ldap-tiger.version>2.4.4</spring-ldap-tiger.version>
         <apacheds-core-avl.version>1.5.7</apacheds-core-avl.version>
         <mina.version>2.0.27</mina.version>
-        <bcprov.version>1.81</bcprov.version>
+        <bcprov.version>1.84</bcprov.version>
     </properties>
 
     <scm>
@@ -53,13 +53,13 @@
                 <exclusions>
                     <exclusion>
                         <groupId>bouncycastle</groupId>
-                        <artifactId>bcprov-jdk15</artifactId>
+                        <artifactId>bcprov-jdk18on</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15to18</artifactId>
+                <artifactId>bcprov-jdk18on</artifactId>
                 <version>${bcprov.version}</version>
             </dependency>
             <dependency>
