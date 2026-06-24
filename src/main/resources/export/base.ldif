@@ -1,15 +1,9 @@
-dn: dc=sample,dc=com
-dc: sample
-o: sample
-objectClass: dcObject
-objectClass: organization
-
 dn: ou=groups,dc=sample,dc=com
 ou: groups
 objectClass: organizationalUnit
 
 dn: ou=project,ou=groups,dc=sample,dc=com
-ou : project
+ou: project
 objectClass: organizationalUnit
 
 dn: ou=quarantine,dc=sample,dc=com

@@ -18,12 +18,8 @@
 
     <properties>
         <sonar.sources>src/main/java</sonar.sources>
-        <shared-ldap.version>0.9.15</shared-ldap.version>
-        <spring-ldap.version>3.3.8</spring-ldap.version>
-        <spring-ldap-tiger.version>2.4.4</spring-ldap-tiger.version>
-        <apacheds-core-avl.version>1.5.7</apacheds-core-avl.version>
-        <mina.version>2.2.9</mina.version>
-        <bcprov.version>1.84</bcprov.version>
+        <spring-ldap.version>4.0.4</spring-ldap.version>
+        <unboundid.version>7.0.5</unboundid.version>
     </properties>
 
     <scm>
@@ -34,73 +30,11 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.6</version>
-            </dependency>
             <!-- LDAP -->
-            <dependency>
-                <groupId>org.apache.mina</groupId>
-                <artifactId>mina-core</artifactId>
-                <version>${mina.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.directory.server</groupId>
-                <artifactId>apacheds-core-avl</artifactId>
-                <!-- Needed for JSE12+ compatibility -->
-                <version>${apacheds-core-avl.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>bouncycastle</groupId>
-                        <artifactId>bcprov-jdk18on</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk18on</artifactId>
-                <version>${bcprov.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.directory.server</groupId>
-                <artifactId>apacheds-protocol-shared</artifactId>
-                <version>${apacheds.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>dom4j</groupId>
-                        <artifactId>dom4j</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>bouncycastle</groupId>
-                        <artifactId>bcprov-jdk15</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.dom4j</groupId>
-                <artifactId>dom4j</artifactId>
-            </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-ldap</artifactId>
                 <version>${spring-security.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.directory.shared</groupId>
-                <artifactId>shared-ldap</artifactId>
-                <version>${shared-ldap.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.directory.server</groupId>
-                <artifactId>apacheds-protocol-ldap</artifactId>
-                <version>${apacheds.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>xml-apis</groupId>
-                        <artifactId>xml-apis</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.springframework.ldap</groupId>
@@ -108,44 +42,27 @@
                 <version>${spring-ldap.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.ldap</groupId>
-                <artifactId>spring-ldap-core-tiger</artifactId>
-                <version>${spring-ldap-tiger.version}</version>
+                <groupId>com.unboundid</groupId>
+                <artifactId>unboundid-ldapsdk</artifactId>
+                <version>${unboundid.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <!-- LDAP -->
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15to18</artifactId>
-        </dependency>
+        <!-- LDAP: Spring Security's <security:ldap-server> (business-context.xml)
+             embeds an UnboundID in-memory server — ApacheDS embedded support was
+             removed in Spring Security 6.0. spring-security-ldap + UnboundID are
+             bundled into the plugin jar via the shade plugin below. -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-ldap</artifactId>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.directory.shared</groupId>
-            <artifactId>shared-ldap</artifactId>
+            <groupId>com.unboundid</groupId>
+            <artifactId>unboundid-ldapsdk</artifactId>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.directory.server</groupId>
-            <artifactId>apacheds-protocol-shared</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.directory.server</groupId>
-            <artifactId>apacheds-protocol-ldap</artifactId>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.directory.server</groupId>
-                    <artifactId>apacheds-kerberos-shared</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.ldap</groupId>
@@ -158,19 +75,15 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.springframework.ldap</groupId>
-            <artifactId>spring-ldap-core-tiger</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.ligoj.plugin</groupId>
             <artifactId>plugin-id-ldap</artifactId>
-            <version>[2.2.3,2.3.0)</version>
+            <version>[3.0.1-SNAPSHOT,3.1.0)</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.ligoj.plugin</groupId>
             <artifactId>plugin-id</artifactId>
-            <version>[2.2.4,2.3.0)</version>
+            <version>[3.0.0,3.1.0)</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -200,11 +113,8 @@
                             </filters>
                             <artifactSet>
                                 <includes>
-                                    <include>org.apache.directory.server:*</include>
-                                    <include>org.apache.directory.shared:*</include>
-                                    <include>org.apache.mina:*</include>
                                     <include>org.springframework.security:spring-security-ldap</include>
-                                    <include>bouncycastle:bcprov-jdk15</include>
+                                    <include>com.unboundid:unboundid-ldapsdk</include>
                                 </includes>
                             </artifactSet>
                         </configuration>

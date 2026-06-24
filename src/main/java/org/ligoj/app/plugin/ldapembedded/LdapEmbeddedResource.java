@@ -1,4 +1,4 @@
-package org.ligoj.app.plugin.id.ldap.embedded;
+package org.ligoj.app.plugin.ldapembedded;
 
 import java.util.Arrays;
 import java.util.List;
