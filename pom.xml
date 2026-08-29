@@ -18,7 +18,7 @@
 
     <properties>
         <sonar.sources>src/main/java</sonar.sources>
-        <spring-ldap.version>4.0.4</spring-ldap.version>
+        <spring-ldap.version>4.0.5</spring-ldap.version>
         <unboundid.version>7.0.5</unboundid.version>
     </properties>
 
